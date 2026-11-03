@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Misión SISE · EA1 · Llave 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sise:#ff0e49;
+  --dark:#241f21;
+  --soft:#fff1f5;
+  --gray:#f6f4f5;
+  --line:#e9e2e5;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#eee9eb;color:var(--dark);font:16px Barlow,Arial,sans-serif}
+.wrap{max-width:1100px;margin:24px auto;background:#fff;min-height:650px;overflow:hidden;border-radius:18px;box-shadow:0 12px 35px #241f2115}
+.top{background:var(--dark);color:#fff;padding:16px 34px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font:800 31px 'Barlow Condensed',sans-serif;color:var(--sise);letter-spacing:.5px}
+.top small{letter-spacing:2px;font-weight:700;font-size:12px}
+.screen{display:none;padding:42px 6%;animation:fade .3s ease}.screen.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.tag{font-weight:800;color:var(--sise);text-transform:uppercase;letter-spacing:1.8px;font-size:13px}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.04}
+h1{font-size:clamp(46px,6.5vw,78px);margin:14px 0 16px}
+h2{font-size:clamp(34px,5vw,48px);margin:12px 0 18px}h3{font-size:25px;margin:0 0 10px}
+.lead{font-size:19px;line-height:1.52;max-width:720px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:center;min-height:455px}
+.keybox{background:var(--soft);border-radius:28px;padding:34px 20px;text-align:center;border:1px solid #ffd5e1}
+.keyicon{font-size:110px;line-height:1;transform:rotate(-18deg);filter:drop-shadow(0 10px 10px #ff0e4930);margin-bottom:14px}
+.pill{display:inline-block;background:var(--dark);color:#fff;border-radius:6px;padding:8px 15px;font-size:13px;font-weight:700;letter-spacing:1px}
+.accent{color:var(--sise)}
+.notice{background:var(--soft);border-left:5px solid var(--sise);padding:16px 18px;border-radius:0 9px 9px 0;line-height:1.5;margin-top:20px}
+button{border:0;background:var(--sise);color:white;font:700 18px 'Barlow Condensed',sans-serif;padding:14px 28px;border-radius:8px;cursor:pointer}button:hover{filter:brightness(.94)}button.secondary{background:var(--dark)}
+.action{display:flex;gap:12px;align-items:center;margin-top:26px;flex-wrap:wrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--gray);padding:22px;border-radius:12px}.panel p{line-height:1.55;margin:0}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px}.step{border:1px solid var(--line);border-radius:10px;padding:13px 14px;line-height:1.42;background:#fff}.step b{color:var(--sise)}
+.deliver{background:var(--dark);color:#fff;padding:22px;border-radius:12px}.deliver ul{margin:9px 0 0;padding-left:20px;line-height:1.62}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 4px}.badge{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:13px;font-weight:700}.badge strong{color:var(--sise)}
+.footer{border-top:1px solid #eee;padding:14px 34px;display:flex;justify-content:space-between;font-size:13px;color:#777}
+.screen2{padding-top:29px}.screen2 .lead{font-size:16px;max-width:none}.screen2 h2{font-size:40px}.screen2 h3{font-size:23px}
+@media(max-width:720px){.wrap{margin:0;border-radius:0}.top{padding:14px 20px}.screen{padding:27px 20px}.hero,.grid2,.steps{grid-template-columns:1fr}.hero{gap:18px}.keybox{padding:20px}.keyicon{font-size:78px}.screen2 h2{font-size:34px}.footer{padding:14px 20px;gap:12px}.footer span:last-child{text-align:right}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="top">
+  <div class="logo">SISE»</div>
+  <small>MISIÓN SISE</small>
+</header>
+
+<section class="screen active" id="s1">
+  <div class="hero">
+    <div>
+      <div class="tag">Semana 3 · Evaluación Aplicativa 1</div>
+      <h1>PREPÁRATE PARA OBTENER TU <span class="accent">SEGUNDA LLAVE</span></h1>
+      <span class="pill">LLAVE 02 · PROPUESTA DE VALOR</span>
+      <p class="lead">Ya identificaste desde dónde partes. Ahora debes integrar lo trabajado en las semanas 1, 2 y 3 para analizar tu empleabilidad, reconocer cómo te comunicas con los demás y definir una estrategia concreta de mejora.</p>
+      <div class="notice">
+        <strong>Para obtener esta llave, debes aprobar la siguiente evaluación:</strong><br>
+        <b>EA1 – Análisis personal de empleabilidad y estrategia de mejora</b>
+      </div>
+      <div class="meta">
+        <span class="badge"><strong>EA1</strong> · Evaluación Aplicativa 1</span>
+        <span class="badge"><strong>20 %</strong> de la nota final</span>
+      </div>
+      <div class="action"><button onclick="go(2)">CONOCE TU EVALUACIÓN »</button></div>
+    </div>
+    <div class="keybox">
+      <div class="keyicon" aria-hidden="true">🗝️</div>
+      <h3>LLAVE 2</h3>
+      <div class="tag">PROPUESTA DE VALOR</div>
+      <p>Integra tu diagnóstico, tus habilidades interpersonales y tu estrategia de mejora para fortalecer lo que puedes aportar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="screen screen2" id="s2">
+  <div class="tag">EA1 · Llave 02 · Propuesta de Valor</div>
+  <h2>Análisis personal de empleabilidad y estrategia de mejora</h2>
+  <div class="meta">
+    <span class="badge"><strong>Integra:</strong> semanas 1, 2 y 3</span>
+    <span class="badge"><strong>Peso:</strong> 20 %</span>
+  </div>
+
+  <div class="notice">
+    <strong>Tu desafío</strong><br>
+    Integra tu autoevaluación de habilidades socioemocionales, tu FODA personal, tu objetivo SMART, tu propuesta de valor profesional y lo aprendido sobre empatía y comunicación asertiva. Luego, analiza una situación real en la que hayas tenido una dificultad de comunicación o manejo de presión, identifica qué fortalezas te ayudaron, qué necesitas mejorar y plantea una estrategia concreta de mejora.
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="panel">
+      <h3>¿Qué aprenderás?</h3>
+      <p>Analizarás tu propio perfil de empleabilidad integrando fortalezas, oportunidades de mejora y habilidades interpersonales. También reconocerás cómo la empatía y la comunicación asertiva influyen en tu desempeño académico y profesional, y formularás una estrategia de mejora coherente con tu perfil y tu propuesta de valor.</p>
+    </div>
+    <div class="panel">
+      <h3>¿Cómo lo harás?</h3>
+      <div class="steps">
+        <div class="step"><b>01.</b> Recupera tu autoevaluación, FODA, objetivo SMART y propuesta de valor.</div>
+        <div class="step"><b>02.</b> Elige una situación real relacionada con comunicación, desacuerdo o presión.</div>
+        <div class="step"><b>03.</b> Describe qué ocurrió, quiénes participaron, cómo actuaste y qué resultado obtuviste.</div>
+        <div class="step"><b>04.</b> Analiza tus fortalezas, aspectos por mejorar y factores que influyeron.</div>
+        <div class="step"><b>05.</b> Contrasta lo identificado con tu FODA personal y ajústalo si es necesario.</div>
+        <div class="step"><b>06.</b> Analiza empatía, escucha, claridad, respeto, asertividad y manejo de presión.</div>
+        <div class="step"><b>07.</b> Relaciona tus fortalezas y oportunidades de mejora con tu propuesta de valor.</div>
+        <div class="step"><b>08.</b> Diseña una estrategia de mejora: qué mejorarás, qué harás, dónde lo aplicarás y cómo medirás tu avance.</div>
+        <div class="step" style="grid-column:1/-1"><b>09.</b> Cierra con una reflexión: ¿qué descubriste sobre tu manera de relacionarte y comunicarte que puede ayudarte a mejorar tu empleabilidad?</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="deliver">
+      <h3>Producto a presentar</h3>
+      <ul>
+        <li>Situación personal seleccionada.</li>
+        <li>Análisis de fortalezas y aspectos por mejorar.</li>
+        <li>Relación con el FODA personal.</li>
+        <li>Análisis de empatía y comunicación asertiva.</li>
+        <li>Relación con la propuesta de valor profesional.</li>
+        <li>Estrategia concreta de mejora.</li>
+        <li>Reflexión final.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Importante</h3>
+      <p>Esta evaluación busca valorar tu capacidad para analizar tu propio desempeño. Trabaja con situaciones y experiencias reales.</p>
+      <div class="notice" style="margin-top:14px">
+        <strong>Uso responsable de IA</strong><br>
+        Puedes utilizar IA para ordenar tus ideas o revisar la redacción, pero el análisis, las experiencias y las conclusiones deben corresponder a tu propia realidad.
+      </div>
+      <p style="margin-top:14px"><strong>¿Qué sigue?</strong><br>Al aprobar la EA1, continuarás avanzando en Misión SISE y podrás activar los recursos asociados a tu segunda llave.</p>
+    </div>
+  </div>
+
+  <div class="action">
+    <button class="secondary" onclick="go(1)">« VOLVER AL INICIO</button>
+    <span style="font-size:13px;color:#777">La entrega y calificación se realizan en la actividad correspondiente de Canvas.</span>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>Instituto SISE – Grupo EducaD</span>
+  <span id="counter">PANTALLA 1 DE 2</span>
+</footer>
+</main>
+
+<script>
+function go(n){
+  document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));
+  document.getElementById('s'+n).classList.add('active');
+  document.getElementById('counter').textContent='PANTALLA '+n+' DE 2';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
